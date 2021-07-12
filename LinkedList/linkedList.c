@@ -6,6 +6,7 @@ typedef struct tagListNode{
 	struct tagListNode *next;
 }ListNode;
 
+int ListConcate(ListNode *, ListNode *);
 int ListLength(ListNode *);
 void ListTraverse(ListNode *);
 void PrintList(ListNode *);  //print all node
@@ -182,6 +183,14 @@ int ListLength(ListNode *head){
 		p = p -> next;
 	}
 	return count;
+}
+
+int ListConcate(ListNode *ListA, ListNode *ListB){
+	ListNode *p = ListA;
+	while(p -> next != NULL){
+		p = p -> next;
+	}
+	p -> next = ListB -> next;
 }
 
 
