@@ -6,6 +6,8 @@ typedef struct tagListNode{
 	struct tagListNode *next;
 }ListNode;
 
+int ListLength(ListNode *);
+void ListTraverse(ListNode *);
 void PrintList(ListNode *);  //print all node
 void FreeAllNode(ListNode *); // free all node moemory
 int InsertTail(ListNode *, int);  // add new node in tail
@@ -163,6 +165,24 @@ void FreeAllNode(ListNode *head){
 	}
 }
 
+void ListTraverse(ListNode *head){
+	ListNode *p = head;
+	p = p -> next;
+	while(p){
+		printf("\n%d", p-> data);
+		p = p -> next;
+	}
+}
+
+int ListLength(ListNode *head){
+	int count;
+	ListNode *p = head -> next;
+	while(p != NULL){
+		count++;
+		p = p -> next;
+	}
+	return count;
+}
 
 
 
