@@ -1,8 +1,11 @@
 #include<stdlib.h>
 #include<stdio.h>
 
+//  
+
 int main(){
-	printf("Hello world");
+	FILE *datafile;
 	
-	return 0;
+	
+	return 1;
 }
