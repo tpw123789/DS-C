@@ -10,10 +10,9 @@ void CListTraverse(ListNode *);
 
 int main(void){
 	ListNode *ListA;
-	
 	ListA = (ListNode *)malloc(sizeof(ListNode));
-	
 	ListA -> next = ListA;
+	
 	return 0;
 }
 

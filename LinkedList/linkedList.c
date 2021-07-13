@@ -16,7 +16,7 @@ int InsertAfter(ListNode *, int); // insert new node
 int DeleteNode(ListNode *, ListNode*); // delete node
 ListNode *GetPreNode(ListNode *, ListNode *); // find pre node
 
-int main(){
+int main(void){
 	FILE *fin; // FILE -> structure in stdio.h
 	ListNode *Head; // head node
 	ListNode *p;
